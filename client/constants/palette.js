@@ -7,5 +7,5 @@ export const MEDIUM_BLUE = '#7A8ABE';
 export const DARK_BLUE = '#5165A5';
 
 export const LIGHT_GRAY = '#B8B8B7';
-export const MEDIUM_GRAY = '#575756';
+export const MEDIUM_GRAY = '#575756'; //DEFAULT COLOR
 export const DARK_GRAY = '#3E3E3D';

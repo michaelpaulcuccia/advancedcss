@@ -6,10 +6,10 @@ import Header from './Header';
 export default function PageLayout({ children }) {
   return (
     <>
-        <Container>
-            <Header />
-            {children}
-        </Container>
+      <Container>
+        <Header />
+          {children}
+      </Container>
     </>
   )
 }

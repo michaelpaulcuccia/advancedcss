@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ComponentWrapper = styled.div`
     padding-left: 24px;
     padding-right: 24px;
-    max-width: 1040px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 `;
