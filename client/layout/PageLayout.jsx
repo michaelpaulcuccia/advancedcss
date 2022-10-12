@@ -3,11 +3,12 @@ import React from 'react';
 import Container from './Container';
 import Header from './Header';
 
-export default function PageLayout() {
+export default function PageLayout({ children }) {
   return (
     <>
         <Container>
             <Header />
+            {children}
         </Container>
     </>
   )
