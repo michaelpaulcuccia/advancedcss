@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import * as palette from '../constants/palette';
 import * as breakpoints from '../constants/breakpoints';
 
@@ -15,6 +15,21 @@ const IconBox = styled.div`
     left: 3%;
 `;
 
+const appear = keyframes`
+
+    from {
+        opacity: 0;
+        transform: translateY(-300%);
+        transform: translateX(-300%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-50%);  
+        transform: translateX(-50%);  
+    }
+`;
+
 const TitleBox = styled.div`
     position: absolute;
     top: 50%;
@@ -25,6 +40,8 @@ const TitleBox = styled.div`
     letter-spacing: 16px;
     text-shadow: 1px 1px ${palette.WHITE};
     text-transform: uppercase;
+    animation-name: ${appear};
+    animation-duration: 2s;
 
     @media (max-width: ${breakpoints.MEDIUM}) {
         font-size: 32px;
@@ -38,7 +55,7 @@ export default function Header() {
     <>
         <Root>
             <IconBox>
-                <img src='/assets/icons/jj.svg' alt='' height={50} width={30}/>
+                <img src='/assets/icons/jj.svg' alt='' height={`5%`} width={`3%`}/>
             </IconBox>
             <TitleBox>
                 arte suave
